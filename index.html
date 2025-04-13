@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu Pandey - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .social-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-indigo-600 text-white py-4 sticky-nav">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">Shantanu Pandey</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-300 transition duration-300">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#about" class="block text-lg text-white hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#projects" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Projects</a></li>
+                    <li><a href="#skills" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="about" class="bg-gray-100 py-16" style="padding-top: 80px;">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold text-indigo-700 mb-4">About Me</h2>
+                <p class="text-gray-700 text-lg">
+                    Hello! I'm Shantanu Pandey, a passionate Web Developer with a strong background in PHP and MySQL website development. I love creating web-based tools and I'm always eager to learn new technologies. My goal is to learn, create, and earn.
+                </p>
+                <p class="text-gray-700 text-lg mt-4">
+                    I have extensive experience in developing web projects using Bootstrap, PHP, and MySQL. I'm a dedicated and detail-oriented person, and I thrive in collaborative environments.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img src="placeholder-image.jpg" alt="Shantanu Pandey" class="rounded-lg shadow-lg w-64 h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-indigo-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project 1</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description of project 1.  This project involved PHP, MySQL, and Bootstrap and the goal was to create a user management system.
+                    </p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 hover:underline transition duration-300">View Project</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project 2</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description of project 2. This project focused on developing a custom CMS using PHP and MySQL.
+                    </p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 hover:underline transition duration-300">View Project</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project 3</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description of project 3.  Key challenges included optimizing database queries and the solution was to implement caching and indexing.
+                    </p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 hover:underline transition duration-300">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fab fa-html5 text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">HTML</h3>
+                        <p class="text-gray-700">Proficient in HTML5.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fab fa-css3-alt text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">CSS</h3>
+                        <p class="text-gray-700">Experienced with CSS3.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fab fa-js text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">JavaScript</h3>
+                        <p class="text-gray-700">Knowledge of ES6+.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fab fa-php text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">PHP</h3>
+                        <p class="text-gray-700">Experienced in PHP development.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fas fa-database text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">MySQL</h3>
+                        <p class="text-gray-700">Database Management with MySQL.</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fas fa-database text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">NoSQL</h3>
+                        <p class="text-gray-700">Experience with NoSQL databases.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex items-center space-x-4">
+                    <i class="fab fa-bootstrap text-4xl text-indigo-500"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-indigo-600">Bootstrap</h3>
+                        <p class="text-gray-700">Proficient in Bootstrap framework.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-indigo-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Contact Me</h2>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-y"></textarea>
+                    </div>
+                    <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center">
+            <h3 class="text-xl font-semibold mb-4">Shantanu Pandey</h3>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-6">
+                <!-- Priority 1: Professional Networks -->
+                <a href="#" class="text-blue-500 hover:text-blue-400 transition duration-300 social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-100 hover:text-gray-300 transition duration-300 social-icon" aria-label="GitHub">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300 social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                
+                <!-- Priority 2: Communication -->
+                <a href="#" class="text-green-500 hover:text-green-400 transition duration-300 social-icon" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                </a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300 social-icon" aria-label="Telegram">
+                    <i class="fab fa-telegram text-2xl"></i>
+                </a>
+                <a href="#" class="text-red-500 hover:text-red-400 transition duration-300 social-icon" aria-label="Gmail">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                
+                <!-- Priority 3: Social Media -->
+                <a href="#" class="text-pink-600 hover:text-pink-500 transition duration-300 social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-blue-600 hover:text-blue-500 transition duration-300 social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+                
+                <!-- Priority 4: Development Platforms -->
+                <a href="#" class="text-orange-500 hover:text-orange-400 transition duration-300 social-icon" aria-label="Stack Overflow">
+                    <i class="fab fa-stack-overflow text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-300 transition duration-300 social-icon" aria-label="Codepen">
+                    <i class="fab fa-codepen text-2xl"></i>
+                </a>
+            </div>
+            
+            <p class="text-gray-400 text-sm">@1995 All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
